@@ -3,8 +3,8 @@ from django.db import models
 class Form(models.Model):
     first_name = models.CharField(max_length=80)
     last_name = models.CharField(max_length=80)
-    email = models.EmailField(max_length=80)
-    date = models.DateField(max_length=80)
+    email = models.EmailField()
+    date = models.DateField()
     occupation = models.CharField(max_length=80)
 
     def __str__(self):
